@@ -1,0 +1,135 @@
+<div class="layout-sidebar" (click)="hideSidebar()" [ngClass]="showMobileSidebar ? 'active' : ''">
+  <a class="logo" style="justify-content: center; padding-left: unset;" [routerLink]=[links.dashboard]>
+     TuitionPro</a>
+  <!-- Search functionality goes here -->
+  <!--   <div class="layout-sidebar-filter p-fluid p-input-filled">
+     <p-autocomplete scrollheight="300px" placeholder="Search by name..." field="label" class="p-element p-inputwrapper ng-valid ng-dirty ng-touched">
+        <span p-autocomplete p-component">
+           <input aria-autocomplete="list" role="searchbox" aria-haspopup="true" p-autocomplete-input p-inputtext p-component ng-star-inserted" autocomplete="off" type="text" aria-controls="pr_id_1_list" aria-expanded="false" aria-activedescendant="p-highlighted-option" placeholder="Search by name...">
+        </span>
+     </p-autocomplete>
+  </div> -->
+  <div class="layout-menu ">
+    <div class="menu-category "> Operations</div>
+    <div class="menu-items">
+      <a [routerLink]=[links.dashboard] routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+             stroke-linejoin="round">
+            <path d="M3 3h7v9H3z"></path>
+            <path d="M14 3h7v5h-7z"></path>
+            <path d="M14 12h7v9h-7z"></path>
+            <path d="M3 16h7v5H3z"></path>
+          </g>
+        </svg>
+        <div class="menu-name"> Dashboard </div>
+      </a>
+      <a routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <path d="M12 7l5 5h-3v4h-4v-4H7l5-5m7 14H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2m0-2V5H5v14h14z"
+                fill="currentColor"></path>
+        </svg>
+        <div class="menu-name"> Create Enquiry </div>
+      </a>
+      <a routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <path d="M12 17l-5-5h3V8h4v4h3l-5 5M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m0 2v14h14V5H5z"
+                fill="currentColor"></path>
+        </svg>
+        <div class="menu-name"> Enquiries </div>
+      </a>
+      <a routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <path d="M12 17l-5-5h3V8h4v4h3l-5 5M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m0 2v14h14V5H5z"
+                fill="currentColor"></path>
+        </svg>
+        <div class="menu-name"> Bookings </div>
+      </a>
+      <a routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <path d="M12 17l-5-5h3V8h4v4h3l-5 5M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m0 2v14h14V5H5z"
+                fill="currentColor"></path>
+        </svg>
+        <div class="menu-name"> Trips </div>
+      </a>
+    </div>
+    <div class="menu-category"> Alert </div>
+    <div class="menu-items ">
+      
+      <a routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+          <path d="M204 36H52a16 16 0 0 0-16 16v152a16 16 0 0 0 16 16h152a16 16 0 0 0 16-16V52a16 16 0 0 0-16-16zm-68 84h68v16h-68zm0-16V88h68v16zm0 48h68v16h-68zm68-80h-68V52h68zM52 52h68v152H52zm152 152h-68v-20h68v20z"
+                fill="currentColor"></path>
+        </svg>
+        <div class="menu-name"> Share </div>
+      </a>
+      <a routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <path d="M19 5h3v2h-3v3h-2V7h-3V5h3V2h2v3m-2 14v-6h2v8H3V5h8v2H5v12h12z"
+                fill="currentColor"></path>
+        </svg>
+        <div class="menu-name"> Notifications </div>
+      </a>
+      <!-- <a
+        [routerLink]=[links.dashboard] routerLinkActive="activeTab">Long Term Support</a><a
+        [routerLink]=[links.dashboard] routerLinkActive="activeTab">PRO Support</a> -->
+    </div>
+    <div class="menu-category ">Users </div>
+    <div class="menu-items ">
+      <!-- <a [routerLink]=[links.folders] routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+          <path d="M216 68h-82.6l-26-29.3a20 20 0 0 0-15-6.7H40a20.1 20.1 0 0 0-20 20v148.6A19.4 19.4 0 0 0 39.4 220h177.5a19.2 19.2 0 0 0 19.1-19.1V88a20.1 20.1 0 0 0-20-20zM44 56h46.6l10.7 12H44zm168 140H44V92h168z"
+                fill="currentColor"></path>
+        </svg>
+        <div class="menu-name"> Folders </div>
+      </a> -->
+      <a routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+          <path d="M224 48v28a8 8 0 0 1-16 0V48h-28a8 8 0 0 1 0-16h28a16 16 0 0 1 16 16zm-8 124a8 8 0 0 0-8 8v28h-28a8 8 0 0 0 0 16h28a16 16 0 0 0 16-16v-28a8 8 0 0 0-8-8zM76 208H48v-28a8 8 0 0 0-16 0v28a16 16 0 0 0 16 16h28a8 8 0 0 0 0-16zM40 84a8 8 0 0 0 8-8V48h28a8 8 0 0 0 0-16H48a16 16 0 0 0-16 16v28a8 8 0 0 0 8 8zm134 95.7a52 52 0 0 0-92 0a8 8 0 1 1-14.2-7.4a69.1 69.1 0 0 1 33.3-30.8A39.5 39.5 0 0 1 88 112a40 40 0 0 1 80 0a39.5 39.5 0 0 1-13.1 29.5a69.1 69.1 0 0 1 33.3 30.8a8.1 8.1 0 0 1-3.4 10.8a8.4 8.4 0 0 1-3.7.9a7.8 7.8 0 0 1-7.1-4.3zM128 136a24 24 0 1 0-24-24a24.1 24.1 0 0 0 24 24z"
+                fill="currentColor"></path>
+        </svg>
+        <div class="menu-name"> Clients </div>
+      </a>
+      <a  routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <path d="M10 13c-2.67 0-8 1.33-8 4v3h11.09c-.02-.14-.04-.27-.05-.41C13 19.4 13 19.2 13 19c0-.31.03-.61.08-.9c.13-.89.46-1.72.92-2.44c.21-.28.42-.54.65-.78l.02-.03c.23-.24.49-.46.76-.66c-.67-.31-1.43-.55-2.17-.74c-1.19-.3-2.37-.45-3.26-.45m1.05 5.1H3.9V17c0-.64 3.13-2.1 6.1-2.1c.68 0 1.36.1 2 .21c-.5.89-.82 1.89-.95 2.99M10 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4m0-6a2 2 0 1 1 0 4c-1.11 0-2-.89-2-2s.9-2 2-2m12 14l-3 3l-3-3h2v-4h2v4h2z"
+                fill="currentColor"></path>
+        </svg>
+        <div class="menu-name"> Drivers </div>
+      </a>
+      <a routerLinkActive="activeTab">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true" role="img" class="" width="25" height="25"
+             preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <path d="M12 23C6.443 21.765 2 16.522 2 11V5l10-4l10 4v6c0 5.524-4.443 10.765-10 12zM4 6v5a10.58 10.58 0 0 0 8 10a10.58 10.58 0 0 0 8-10V6l-8-3z"
+                fill="currentColor"></path>
+          <circle cx="12" cy="8.5" r="2.5" fill="currentColor"></circle>
+          <path d="M7 15a5.782 5.782 0 0 0 5 3a5.782 5.782 0 0 0 5-3c-.025-1.896-3.342-3-5-3c-1.667 0-4.975 1.104-5 3z"
+                fill="currentColor"></path>
+        </svg>
+        <div class="menu-name"> Agents </div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- <button (click)="showMobileSidebar = true">click</button> -->

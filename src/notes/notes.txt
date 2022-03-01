@@ -1,0 +1,13 @@
+//NOTE - 1
+Fix Dashborard Title issue, its using 
+    this.titleService.setTitle("Dashboard Overview");
+in dashboard component container
+
+//NOTE - 2
+Refactor all components to smart and dumb components
+
+//NOTE - 3
+Verify hideSidebar() logic
+
+//NOTE - 4
+Implement search function in navbar

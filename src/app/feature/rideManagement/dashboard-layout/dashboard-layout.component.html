@@ -1,0 +1,9 @@
+<app-sidebar [showMobileSidebar]=showMobileSidebar (hideMobileSidebar)="showMobileSidebar=($event)"></app-sidebar>
+<!-- Will Fix this later -->
+<div class="sidebar-margin">  
+<app-navbar (showMobileSidebar)="showMobileSidebar=($event)"></app-navbar>
+<div class="layout-mask" [ngClass]="showMobileSidebar ? 'layout-mask-active' : ''" (click)="hideSidebar()"></div>
+<div class="layout-content">
+  <router-outlet></router-outlet>
+</div>
+</div>

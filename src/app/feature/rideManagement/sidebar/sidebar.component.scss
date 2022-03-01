@@ -1,0 +1,121 @@
+.layout-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #220646;
+  width: 250px;
+  border-right: 1px solid #dee2e6;
+  -webkit-user-select: none;
+  user-select: none;
+  // transition: transform 150ms ease-in-out 25ms;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 3px 3px 0;
+}
+.layout-sidebar .logo {
+  color: #fff;
+  min-height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+  z-index: 1;
+  border-right: 1px solid #dee2e6;
+  font-family: sans-serif;
+  font-size: 2rem;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.layout-sidebar .layout-menu {
+  padding: 0 1rem;
+  overflow-y: auto;
+  flex-grow: 1;
+  border-right: 1px solid #dee2e6;
+}
+
+.layout-sidebar .layout-menu .menu-category:first-child {
+  border-top: 0 none;
+  padding-top: 1rem;
+}
+.layout-sidebar .layout-menu .menu-category {
+  display: block;
+  color: #6c757d;
+  font-weight: 600;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 1.5rem 0 1rem;
+  font-size: 0.857rem;
+  text-transform: uppercase;
+  border-top: 1px solid #dee2e6;
+}
+.layout-sidebar .layout-menu .menu-items {
+  padding: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-sidebar .layout-menu .menu-items a {
+  color: #dee2e6;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.layout-sidebar .layout-menu .menu-items a:focus {
+  z-index: 1;
+  outline: 0 none;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 0 0 0.2em #bbdefb;
+}
+
+.layout-sidebar .layout-menu .menu-items a:hover {
+  background-color: #4a158d;
+  border-right-color: #9e1578;
+  border-right-style: solid;
+  border-right-width: 7px;
+}
+.layout-sidebar .layout-menu .menu-items a .menu-name{
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .layout-sidebar {
+    transform: translate(-100%);
+    z-index: 999;    
+  }
+  .layout-sidebar.active {
+    transform: translateX(0%);
+    z-index: 999;
+  }
+}
+
+.activeTab {
+  background-color: rgba(198, 212, 247, 0.089);
+  border-right-color: #7e1160;
+  border-right-style: solid;
+  border-right-width: 7px;
+}
+
+// For Sidebar Functionality
+// Create a component for the sidebar mask and app toolbar for mobile
+/*
+@media screen and (max-width: 960px)
+.layout-mask {
+    background-color: #0000001a;
+}
+@media screen and (max-width: 960px)
+.layout-mask.layout-mask-active {
+    z-index: 998;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0006;
+    transition: background-color .5s;
+} */

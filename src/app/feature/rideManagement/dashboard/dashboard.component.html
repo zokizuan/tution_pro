@@ -1,0 +1,60 @@
+<!-- <form [formGroup]="SignupForm" (ngSubmit)="onsubmit()">
+    <div>
+      <label for="username">name</label>
+      <input type="text" name="username" id="username" required formControlName="username">
+    </div>
+    <div>
+      <label for="secret">Seret</label>
+      <input type="text" name="secret" id="secret" required email formControlName="secret">
+    </div>
+    <div *ngFor="let gender of Genders">
+      <label for="{{gender}}radio">
+        <input type="radio" value="{{gender}}" formControlName="gender">
+        {{gender}}</label>
+    </div>
+  <button type="submit"> Submit </button>
+</form> -->
+
+
+<div class="parent">
+  <div class="side_container" id="side_container">
+    <div class="image_container">
+      
+      <ng-container *ngFor="let coin of availableCoins; let i= index">
+        <div #tref pDraggable="coins" (onDragStart)="dragStart(coin)" (onDragEnd)="dragEnd()">          
+          <img src="https://ik.imagekit.io/hamza/coin_dollar_finance_icon_125510_cEpdgsWtT.png?updatedAt=1641797694244" alt="coin">
+        </div>
+      </ng-container>            
+    </div>
+  </div>  
+  <ng-container *ngFor="let x of [].constructor(4); let i= index">
+  <div class="container_{{i+1}}">
+    <div class="row_container">
+      <ng-container *ngFor="let x of [].constructor(2); let i= index">
+        <div class="row_{{i+1}}">
+          <ng-container *ngFor="let x of [].constructor(5); let i= index">
+            <div pDroppable="coins" (onDrop)="drop($event)" class="drop_box" id="drop_box_{{i+1}}"></div>
+          </ng-container>
+        </div>        
+      </ng-container>
+    </div>
+  </div>
+</ng-container>
+</div>
+
+
+<!-- <div style="flex-direction: column; display: flex; justify-content: center; align-items: center;">
+  <ng-container  *ngFor="let coin of availableCoins; let i= index">  
+  <div pDraggable="coins" (onDragStart)="dragStart(coin)" (onDragEnd)="dragEnd()">          
+    <img width="50px" src="https://ik.imagekit.io/hamza/coin_dollar_finance_icon_125510_cEpdgsWtT.png?updatedAt=1641797694244" alt="coin">
+  </div>
+  </ng-container>
+  <ng-container *ngFor="let column of [].constructor(1); let i= index">
+  
+  <div (onDrop)="drop($event)" pDroppable="coins" class="drop-column" style="margin: 10%; width: 50vw; height: 200px; background-color: skyblue;">
+  </div>
+  <div (onDrop)="drop($event)" pDroppable="second" class="drop-column" style="margin: 10%; width: 50vw; height: 200px; background-color: skyblue;">
+  </div>
+  </ng-container>
+  
+</div> -->

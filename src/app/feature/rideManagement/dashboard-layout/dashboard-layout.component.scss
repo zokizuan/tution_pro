@@ -1,0 +1,21 @@
+.sidebar-margin {
+  margin-left: 250px;
+}
+@media screen and (max-width: 960px) {
+  .sidebar-margin {
+    margin: 0;
+  }
+  .layout-mask {
+    background-color: #0000001a;
+  }
+  .layout-mask.layout-mask-active {
+    z-index: 998;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0006;
+    transition: background-color .5s;
+}
+}

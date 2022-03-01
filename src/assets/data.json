@@ -1,0 +1,9 @@
+{
+  "types": [
+    {
+      "outgoing_types": ["Sales", "Damaged", "Adjustment"],
+      "incoming_types": ["Purchased", "Return", "Adjustment"]
+
+    }
+  ]
+}
